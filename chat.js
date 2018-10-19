@@ -15,8 +15,8 @@ function getInputBob() {
 function confirmAliceAddress(address) {
     var confirmBtn = document.getElementById("AliceConfirmBtn");
     confirmBtn.onclick = function(){
-        if(address) {//travel address
-            alert("Address exists!");
+        if(address === 123) {//travel address
+            alert("Address exists!\nPlease input context!");
         }
         else {
             alert("No Address!");
@@ -27,11 +27,12 @@ function confirmAliceAddress(address) {
 function confirmBobAddress(address) {
     var confirmBtn = document.getElementById("BobConfirmBtn");
     confirmBtn.onclick = function(){
-        if(address) {//travel address
-            alert("Address exists!");
+        if(address === 123) {//travel address
+            alert("Address exists!\nPlease input context!");
         }
         else {
             alert("No Address!");
+            return 0;
         }
     }
 }

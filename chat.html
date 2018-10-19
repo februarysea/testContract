@@ -8,68 +8,50 @@
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
+    <script>
+        window.onload = function () {
+            var AliceAdd = document.getElementById("AliceAddress").value;
+            var BoBAdd = document.getElementById("BobAddress").value;
+            confirmAliceAddress(AliceAdd);
+            confirmBobAddress(BoBAdd);
+        }
+    </script>
 </head>
+
 
 <div class="container-fluid">
 <body>
     <div class="col-md-6">
-       <div>
-           Alice
-       </div>
-        <div class="panel panel-default">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="row"><input id="AliceAddress" type="text" placeholder="Address" required>
-                        <button id="AliceConfirmBtn" class="btn btn-info">
-                            <i class=" fa fa-comment"></i>
-                            confirm
-                            <script>
-                                var address = document.getElementById("AliceAddress");
-                                window.onload = function () {
-                                    var fun = confirmAliceAddress();
-                                    fun(address);
-                                }
-                            </script>
-                        </button>
-                    </div>
+        <div>Alice</div>
+        <div class="panel panel-default ">
+           <div class="panel-heading">
+                <div class="row"><input id="AliceAddress" type="text" placeholder="Address" required>
+                    <button id="AliceConfirmBtn" class="btn btn-info">
+                        <i class=" fa fa-comment"></i>
+                        confirm
+                    </button>
                 </div>
-            </div>
+           </div>
             <div class="panel-body">
             </div>
             <div class="panel-footer">
-                <div class="row"><input id="AliceContext"  type="text" placeholder="Waiting..." required>
+                <div class="row"><input id="AliceContext" type="text" placeholder="Waiting..." required>
                     <button id="AliceSendBtn" class="btn btn-info">
                         <i class="fa fa-send"></i>
                         send
-                        <script>
-                            var context = document.getElementById("AliceContext");
-                            window.onload = function () {
-                                var fun = getInputAlice();
-                                fun(address);
-                            }
-                        </script>
                     </button>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-md-6">
-        <div>
-            Bob
-        </div>
+        <div>Bob</div>
         <div class="panel panel-default ">
             <div class="panel-heading">
                 <div class="row"><input id="BobAddress" type="text" placeholder="Address" required>
                     <button id="BobConfirmBtn" class="btn btn-info">
                         <i class=" fa fa-comment"></i>
                         confirm
-                        <script>
-                            var address = document.getElementById("BobAddress");
-                            window.onload = function () {
-                                var fun = confirmBobAddress();
-                                fun(address);
-                            }
-                        </script>
                     </button>
                 </div>
             </div>
@@ -81,8 +63,8 @@
                         <i class="fa fa-send"></i>
                         send
                     </button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </body>
