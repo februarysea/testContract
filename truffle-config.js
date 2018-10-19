@@ -13,9 +13,13 @@
  */
 
 module.exports = {
-  networks: {
-    development: {
-      host :'192.168.31.126',
-      port: 7545;
-      network_id: '*'
+    networks: {
+        development: {
+            host: 'localhost',
+            port: 8545,
+            network_id: '*',// Match any network id
+            gas: 6712388,
+            gasPrice:200000000000
+        }
+    }
 };
