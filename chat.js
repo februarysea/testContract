@@ -1,17 +1,38 @@
 function getInputAlice() {
+    var inputBtn = document.getElementById("AliceSendBtn");
     var str = document.getElementById("AliceContext").value;
-
+    inputBtn.onclick = function() {
+    }
 }
 
 function getInputBob() {
-    var str = document.getElementById("BobContext").value;
+    var inputBtn = document.getElementById("BobSendBtn");
+    var str = document.getElementById("Context").value;
+    inputBtn.onclick = function () {
+    }
 }
 
-function confirmAddress(address) {
-    if(address === 570702561){//travel all address
-        return true;
-    }
-    else {
-        return false;
+function confirmAliceAddress(address) {
+    var confirmBtn = document.getElementById("AliceConfirmBtn");
+    confirmBtn.onclick = function(){
+        if(address) {//travel address
+            alert("Address exists!");
+        }
+        else {
+            alert("No Address!");
+        }
     }
 }
+
+function confirmBobAddress(address) {
+    var confirmBtn = document.getElementById("BobConfirmBtn");
+    confirmBtn.onclick = function(){
+        if(address) {//travel address
+            alert("Address exists!");
+        }
+        else {
+            alert("No Address!");
+        }
+    }
+}
+
