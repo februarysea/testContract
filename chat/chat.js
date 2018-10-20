@@ -1,18 +1,28 @@
 function getInputAlice() {
     var inputBtn = document.getElementById("AliceSendBtn");
     inputBtn.onclick = function() {
+        var beforeText = document.getElementById("BobText").value;
         var inputAliceContext = document.getElementById("AliceContext").value;
-        document.getElementById("BobText").innerText = inputAliceContext;
-        return 0;
+        if(beforeText){
+            document.getElementById("BobText").innerText = beforeText + "\n" + inputAliceContext;
+        }
+        else {
+            document.getElementById("BobText").innerText = inputAliceContext;
+        }
     }
 }
 
 function getInputBob() {
     var inputBtn = document.getElementById("BobSendBtn");
-    inputBtn.onclick = function () {
-        var inputBobContext = document.getElementById("BobContext").value;
-        document.getElementById("AliceText").innerText = inputBobContext;
-        return 0;
+    inputBtn.onclick = function() {
+        var beforeText = document.getElementById("AliceText").value;
+        var inputAliceContext = document.getElementById("BobContext").value;
+        if(beforeText){
+            document.getElementById("AliceText").innerText = beforeText + "\n" + inputAliceContext;
+        }
+        else {
+            document.getElementById("AliceText").innerText = inputAliceContext;
+        }
     }
 }
 
@@ -40,7 +50,6 @@ function confirmBobAddress() {
         }
         else {
             alert("No Address!");
-            return 0;
         }
     }
 }
