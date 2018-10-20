@@ -5,15 +5,14 @@
     <title>Chat to Chat</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="chat.css" />
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
     <script>
         window.onload = function () {
-            var AliceAdd = document.getElementById("AliceAddress").value;
-            var BoBAdd = document.getElementById("BobAddress").value;
-            confirmAliceAddress(AliceAdd);
-            confirmBobAddress(BoBAdd);
+            confirmAliceAddress();
+            confirmBobAddress();
         }
     </script>
 </head>
@@ -22,17 +21,19 @@
 <div class="container-fluid">
 <body>
     <div class="col-md-6">
-        <div>Alice</div>
-        <div class="panel panel-default ">
-           <div class="panel-heading">
-                <div class="row"><input id="AliceAddress" type="text" placeholder="Address" required>
+        <div  id="firstAlice" align="center">Alice</div>
+        <hr>
+        <div id="AlicePanel" class="panel panel-default">
+           <div id="ALiceHead" class="panel-heading">
+                <div class="row"><input id="AliceAddress" type="text" placeholder="Address"  required>
                     <button id="AliceConfirmBtn" class="btn btn-info">
                         <i class=" fa fa-comment"></i>
                         confirm
                     </button>
                 </div>
            </div>
-            <div class="panel-body">
+            <div id="Alice" class="panel-body">
+                <textarea id="AliceText" readonly="true"></textarea>
             </div>
             <div class="panel-footer">
                 <div class="row"><input id="AliceContext" type="text" placeholder="Waiting..." required>
@@ -45,9 +46,10 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div>Bob</div>
-        <div class="panel panel-default ">
-            <div class="panel-heading">
+        <div id="firstBob" align="center">Bob</div>
+        <hr>
+        <div id="BobPanel" class="panel panel-default">
+            <div id="BObHead" class="panel-heading">
                 <div class="row"><input id="BobAddress" type="text" placeholder="Address" required>
                     <button id="BobConfirmBtn" class="btn btn-info">
                         <i class=" fa fa-comment"></i>
@@ -55,7 +57,8 @@
                     </button>
                 </div>
             </div>
-            <div class="panel-body">
+            <div id="Bob" class="panel-body">
+                <textarea id="BobText" readonly="true"></textarea>
             </div>
             <div class="panel-footer">
                 <div class="row"><input id="BobContext" type="text" placeholder="Waiting..." required>

@@ -1,0 +1,47 @@
+#firstAlice {
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+#firstBob {
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+#AlicePanel {
+    height: 100%;
+}
+
+#BobPanel {
+    height: 100%;
+}
+
+#AliceAddress {
+   width: 82%;
+    height: 35px;
+}
+
+#BobAddress {
+    width:82%;
+    height: 35px;
+}
+
+#AliceContext {
+    width: 85%;
+    height: 35px;
+}
+
+#BobContext {
+    width:85%;
+    height: 35px;
+}
+
+#AliceText {
+    width: 100%;
+    height: 400px;
+}
+
+#BobText {
+    width: 100%;
+    height: 400px;
+}
