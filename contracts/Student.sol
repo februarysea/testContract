@@ -1,7 +1,6 @@
 pragma solidity ^0.4.23;
 
 import "./Administer.sol";
-import "./erc721.sol";
 
 contract Student is Administer {
     uint dataFee = 0.01 ether;
