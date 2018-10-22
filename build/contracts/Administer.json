@@ -47,14 +47,14 @@
       "type": "event"
     }
   ],
-  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610291806100536000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b14610051578063f2fde38b146100a8575b600080fd5b34801561005d57600080fd5b506100666100eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100e9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610110565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561016b57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101a757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820cba950a2fdd1b374ba86f3ddb9e8e2f0deb51b7a88b3980efb0c7f9b5b0a94140029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b14610051578063f2fde38b146100a8575b600080fd5b34801561005d57600080fd5b506100666100eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100e9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610110565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561016b57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101a757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820cba950a2fdd1b374ba86f3ddb9e8e2f0deb51b7a88b3980efb0c7f9b5b0a94140029",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610291806100536000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b14610051578063f2fde38b146100a8575b600080fd5b34801561005d57600080fd5b506100666100eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100e9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610110565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561016b57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101a757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820e23480b42e8bf86d783a92dfea7b364b1bd4726b277132f9f6fc48392658c0d30029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b14610051578063f2fde38b146100a8575b600080fd5b34801561005d57600080fd5b506100666100eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100e9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610110565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561016b57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101a757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820e23480b42e8bf86d783a92dfea7b364b1bd4726b277132f9f6fc48392658c0d30029",
   "sourceMap": "51:1004:0:-;;;523:10:2;515:5;;:18;;;;;;;;;;;;;;;;;;51:1004:0;;;;;;",
   "deployedSourceMap": "51:1004:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:20:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:2;;;;;;;;;;;;;;;;;;;;;;;;;;;878:183;;8:9:-1;5:2;;;30:1;27;20:12;5:2;878:183:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:20;;;;;;;;;;;;;:::o;878:183::-;682:5;;;;;;;;;;;668:19;;:10;:19;;;660:28;;;;;;;;978:1;958:22;;:8;:22;;;;950:31;;;;;;;;1019:8;991:37;;1012:5;;;;;;;;;;;991:37;;;;;;;;;;;;1046:8;1038:5;;:16;;;;;;;;;;;;;;;;;;878:183;:::o",
   "source": "pragma solidity ^0.4.23;\n\nimport \"./Ownable.sol\";\n\ncontract Administer is Ownable {\n\n    //event NewAccount(uint id, uint password);\n\n    uint[] chainData;\n\n    struct studentAccount {\n        uint studentId;\n        string studentPassword;\n    }\n    struct teacherAccount {\n        uint teacherId;\n        string teacherPassword;\n    }\n\n    studentAccount[]  studentAccounts;\n    teacherAccount[]  teacherAccounts;\n\n    mapping(uint => address) idToUser;\n    mapping(uint => string) idToPassword;\n\n    modifier onlyAccountOf(uint _id) {\n        require(msg.sender == idToUser[_id]);\n        _;\n    }\n\n    function _createTeacherAccount(uint _id, string _password) internal onlyOwner {\n        teacherAccounts.push(teacherAccount(_id, _password));\n        idToUser[_id] = msg.sender;\n        //NewAccount(_id, _password);\n    }\n\n    function _createStudentAccount(uint _id, string _password) internal onlyOwner{\n        studentAccounts.push(studentAccount(_id, _password));\n        idToUser[_id] = msg.sender;\n        //NewAccount(_id, _password);\n    }\n}",
-  "sourcePath": "/Users/februarysea/testContract/contracts/Administer.sol",
+  "sourcePath": "/Users/februarysea/Documents/GitHub/testContract/contracts/Administer.sol",
   "ast": {
-    "absolutePath": "/Users/februarysea/testContract/contracts/Administer.sol",
+    "absolutePath": "/Users/februarysea/Documents/GitHub/testContract/contracts/Administer.sol",
     "exportedSymbols": {
       "Administer": [
         99
@@ -75,7 +75,7 @@
         "src": "0:24:0"
       },
       {
-        "absolutePath": "/Users/februarysea/testContract/contracts/Ownable.sol",
+        "absolutePath": "/Users/februarysea/Documents/GitHub/testContract/contracts/Ownable.sol",
         "file": "./Ownable.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -1281,7 +1281,7 @@
     "src": "0:1055:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/februarysea/testContract/contracts/Administer.sol",
+    "absolutePath": "/Users/februarysea/Documents/GitHub/testContract/contracts/Administer.sol",
     "exportedSymbols": {
       "Administer": [
         99
@@ -1302,7 +1302,7 @@
         "src": "0:24:0"
       },
       {
-        "absolutePath": "/Users/februarysea/testContract/contracts/Ownable.sol",
+        "absolutePath": "/Users/februarysea/Documents/GitHub/testContract/contracts/Ownable.sol",
         "file": "./Ownable.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -2516,9 +2516,9 @@
       "events": {},
       "links": {},
       "address": "0x2a6888cd0b0abde89d818445d86359bc835ace60",
-      "transactionHash": "0xd5e293ae45863b454cbd641440c301b07a161bebf0b042cd957188945e20178d"
+      "transactionHash": "0x6992841fbcb8948c3771bf4c0082d8f5e99af1c01263b08c41770d29e0b2f66c"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-10-22T07:30:13.143Z"
+  "updatedAt": "2018-10-22T13:05:33.589Z"
 }

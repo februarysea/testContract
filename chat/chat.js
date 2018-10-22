@@ -1,32 +1,36 @@
 function getInputAlice() {
     var inputBtn = document.getElementById("AliceSendBtn");
+    var inputAliceContext = "";
     inputBtn.onclick = function() {
-        var beforeText = document.getElementById("BobText").value;
-        var inputAliceContext = document.getElementById("AliceContext").value;
-        /*if(beforeText){
-            document.getElementById("BobText").innerText = beforeText + "\n" + inputAliceContext;
+        if(inputAliceContext === "") {
+            inputAliceContext = document.getElementById("AliceContext").value;
+            document.getElementById("BobText").innerText = inputAliceContext;
+            document.getElementById("AliceContext").value = "";
         }
         else {
+            inputAliceContext = inputAliceContext+ "\n" + document.getElementById("AliceContext").value;
             document.getElementById("BobText").innerText = inputAliceContext;
-        }*/
-        document.getElementById("BobText").innerText = inputAliceContext;
-        alert("send successfully!");
+            document.getElementById("AliceContext").value = "";
+        }
+
     }
 }
 
 function getInputBob() {
     var inputBtn = document.getElementById("BobSendBtn");
+    var inputBobContext = "";
     inputBtn.onclick = function() {
-        var beforeText = document.getElementById("AliceText").value;
-        var inputAliceContext = document.getElementById("BobContext").value;
-        /*if(beforeText){
-            document.getElementById("AliceText").innerText = beforeText + "\n" + inputAliceContext;
+        if(inputBobContext === "") {
+            inputBobContext = document.getElementById("BobContext").value;
+            document.getElementById("AliceText").innerText = inputBobContext;
+            document.getElementById("BobContext").value = "";
         }
         else {
-            document.getElementById("AliceText").innerText = inputAliceContext;
-        }*/
-        document.getElementById("AliceText").innerText = inputAliceContext;
-        alert("send successfully!");
+            inputBobContext = inputBobContext+ "\n" + document.getElementById("BobContext").value;
+            document.getElementById("AliceText").innerText = inputBobContext;
+            document.getElementById("BobContext").value = "";
+        }
+
     }
 }
 
