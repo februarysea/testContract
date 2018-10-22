@@ -34,28 +34,42 @@ function confirmAliceAddress(web3) {
     var confirmBtn = document.getElementById("AliceConfirmBtn");
     confirmBtn.onclick = function(){
         var AliceAdd = document.getElementById("AliceAddress").value;
-        var code = web3.eth.getCode(AliceAdd);
-        if(code === "0x") {//travel address
-            alert("Address exists!\nPlease input context!");
-            getInputAlice();
-        }
-        else {
-            alert("No Address!");
-        }
-    }
+        var code = web3.eth.getCode(AliceAdd, function(error, result) {
+            if(!error) {
+                if(result === "0x0") {
+                    alert("Address exists!");
+                    alert("Please input context!");
+                    getInputAlice();
+                }
+                else {
+                    alert("No Address!");
+                }
+            }
+            else {
+                alert("Please input correct address!");
+            }
+        });
+    };
 }
 
 function confirmBobAddress(web3) {
     var confirmBtn = document.getElementById("BobConfirmBtn");
     confirmBtn.onclick = function(){
         var BobAdd = document.getElementById("BobAddress").value;
-        var code = web3.eth.getCode(BobAdd);
-        if(code === "0x") {//travel address
-            alert("Address exists!\nPlease input context!");
-            getInputBob();
-        }
-        else {
-            alert("No Address!");
-        }
+        var code = web3.eth.getCode(BobAdd, function(error, result) {
+            if(!error) {
+                if(result === "0x0") {
+                    alert("Address exists!");
+                    alert("Please input context!");
+                    getInputBob();
+                }
+                else {
+                    alert("No Address!");
+                }
+            }
+            else {
+                alert("Please input correct address!");
+            }
+        });
     }
 }
