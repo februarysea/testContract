@@ -8,16 +8,24 @@
     <link type="text/css" rel="stylesheet" href="chat.css" />
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js">
-        if (typeof web3 !== 'undefined') {
-            web3 = new Web3(web3.currentProvider);
-        }
-        else {
-            // Set the provider you want from Web3.providers
-            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
+    <script>
+
+        function startApp() {
+        }
+
+        window.addEventListener('load', function() {
+            if (typeof web3 !== 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+            }
+            else {
+                // Set the provider you want from Web3.providers
+                web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+            }
+            startApp()
+        })
+    </script>
     <script>
         window.onload = function () {
             confirmAliceAddress(web3);

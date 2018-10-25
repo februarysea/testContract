@@ -6,7 +6,7 @@ contract Administer is Ownable {
 
     //event NewAccount(uint id, uint password);
 
-    uint[] chainData;
+    string[] chainData;
 
     struct studentAccount {
         uint studentId;
@@ -22,6 +22,8 @@ contract Administer is Ownable {
 
     mapping(uint => address) idToUser;
     mapping(uint => string) idToPassword;
+    mapping(address => uint) uploadUserToDataId;
+    mapping(address => string) downloadUserToData;
 
     modifier onlyAccountOf(uint _id) {
         require(msg.sender == idToUser[_id]);

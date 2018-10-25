@@ -72,6 +72,7 @@ function confirmBobAddress(web3) {
                 }
             }
             else {
+                console.log('Unknown Error');
                 alert("Please input correct address!");
             }
         });

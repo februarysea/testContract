@@ -4,9 +4,8 @@ import "./Administer.sol";
 
 contract Teacher is Administer {
 
-    function uploadData(uint id, uint data) onlyAccountOf(id) {
+    function uploadTeacherData(uint id, string data) onlyAccountOf(id) {
         chainData.push(data);
+        uploadUserToDataId[idToUser[id]] = chainData.length-1;
     }
-
-
 }
