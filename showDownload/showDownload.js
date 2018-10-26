@@ -17,21 +17,22 @@ function confirmAliceAddress(web3) {
     var confirmBtn = document.getElementById("AliceConfirmBtn");
     confirmBtn.onclick = function(){
         var AliceAdd = document.getElementById("AliceAddress").value;
-        var code = web3.eth.getCode(AliceAdd, function(error, result) {
-            if(!error) {
-                if(result === "0x0") {
-                    alert("Address exists!");
-                    alert("Please input search address!");
-                    showDownloadData();
+        if (AliceAdd.length === 42) {
+            web3.eth.getCode(AliceAdd, function(error, result) {
+                if(!error) {
+                    if(result === "0x0") {
+                        alert("Address exists!");
+                        alert("Please input context!");
+                        showDownloadData();
+                    }
+                    else {
+                        alert("No Address!");
+                    }
                 }
-                else {
-                    alert("No Address!");
-                }
-            }
-            else {
-                alert("Please input correct address!");
-            }
-        });
+            });
+        }
+        else {
+            alert("Please input correct address");
+        }
     };
 }
-
