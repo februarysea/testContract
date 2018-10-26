@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat to Chat</title>
+    <title>DownloadInformation</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="chat.css" />
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
-    <script type="text/javascript" src="chat.js"></script>
+    <script type="text/javascript" src="showDownload.js"></script>
     <script>
-        function startApp() {}
+
+        function startApp() {
+        }
 
         window.addEventListener('load', function() {
             if (typeof web3 !== 'undefined') {
@@ -27,7 +29,6 @@
     <script>
         window.onload = function () {
             confirmAliceAddress(web3);
-            confirmBobAddress(web3);
         }
     </script>
 </head>
@@ -35,7 +36,6 @@
 
 <div class="container-fluid">
     <body>
-    <div class="col-md-6">
         <div  id="firstAlice" align="center">Alice</div>
         <hr>
         <div id="AlicePanel" class="panel panel-default">
@@ -59,32 +59,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div id="firstBob" align="center">Bob</div>
-        <hr>
-        <div id="BobPanel" class="panel panel-default">
-            <div id="BObHead" class="panel-heading">
-                <div class="row"><input id="BobAddress" type="text" placeholder="Address" required>
-                    <button id="BobConfirmBtn" class="btn btn-info">
-                        <i class=" fa fa-comment"></i>
-                        confirm
-                    </button>
-                </div>
-            </div>
-            <div id="Bob" class="panel-body">
-                <textarea id="BobText" readonly="true" style="resize:none"></textarea>
-            </div>
-            <div class="panel-footer">
-                <div class="row"><input id="BobContext" type="text" placeholder="Waiting..." required>
-                    <button id="BobSendBtn" class="btn btn-info">
-                        <i class="fa fa-send"></i>
-                        send
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
     </body>
 </div>
 </html>
