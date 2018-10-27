@@ -27,65 +27,109 @@
     </script>
     <script>
         window.onload = function () {
+            page1ToPage2();
+            getName();
             confirmAliceAddress(web3);
             confirmBobAddress(web3);
         }
     </script>
 </head>
-
-
-<div class="container-fluid">
-    <body>
-    <div class="col-md-6">
-        <div  id="firstAlice" align="center">Alice</div>
-        <hr>
-        <div id="AlicePanel" class="panel panel-default">
-            <div id="AliceHead" class="panel-heading panel-info">
-                <div class="row"><input id="AliceAddress" type="text" placeholder="Address"  required>
-                    <button id="AliceConfirmBtn" class="btn btn-info">
-                        <i class=" fa fa-comment"></i>
-                        confirm
-                    </button>
+    <body id="body">
+    <div class="container-fluid">
+        <div id="page1" class="row text-center">
+            <div id="page1A" class="col-md-6">
+                <div class="panel panel-default page1">
+                    <div class="panel-body">
+                        <div>
+                            <img src="../chat_a.png" height=60% width=60%/>
+                        </div>
+                        <br><br>
+                        <div class="text-center">
+                            <textarea class="page1Text" readonly="true" disabled="true" style="resize:none">
+                            you can build connections between two interfaces
+                            and review your sent and received messages.
+                            </textarea>
+                        </div>
+                        <br><br>
+                        <br><br>
+                        <div class="text-center">
+                            <input id="userNameA" class="page1Input" type="text" placeholder="New Username"  style="resize:none" required>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button id="page1ButtonA" class="btn btn-primary btn-lg">CONNECT</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="Alice" class="panel-body">
-                <textarea id="AliceText" readonly="true" style="resize:none"></textarea>
-            </div>
-            <div class="panel-footer">
-                <div class="row"><input id="AliceContext" type="text" placeholder="Waiting..." required>
-                    <button id="AliceSendBtn" class="btn btn-info">
-                        <i class="fa fa-send"></i>
-                        send
-                    </button>
+            <div id="page1B" class="col-md-6">
+                <div class="panel panel-default page1">
+                    <div class="panel-body">
+                        <div>
+                            <img src="../chat_b.png" height=60% width=60%/>
+                        </div>
+                        <br><br>
+                        <div class="text-center">
+                            <textarea class="page1Text" readonly="true" disabled="true" style="resize:none">
+                            you can build connections between two interfaces
+                            and review your sent and received messages.
+                            </textarea>
+                        </div>
+                        <br><br>
+                        <br><br>
+                        <div class="text-center">
+                            <input id="userNameB" class="page1Input" type="text" placeholder="New Username"  style="resize:none" required>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button id="page1ButtonB" class="btn btn-primary btn-lg">CONNECT</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div id="firstBob" align="center">Bob</div>
-        <hr>
-        <div id="BobPanel" class="panel panel-default">
-            <div id="BobHead" class="panel-heading panel-info">
-                <div class="row"><input id="BobAddress" type="text" placeholder="Address" required>
-                    <button id="BobConfirmBtn" class="btn btn-info">
-                        <i class=" fa fa-comment"></i>
-                        confirm
+        <div id="page2" class="row" >
+            <div id="page2A" class="col-md-6" hidden="true">
+                <div class="row text-center">
+                    <textarea id="firstAlice" class="first text-center" readonly="true" disabled="true" style="resize:none"></textarea>
+                </div>
+                <div class="row text-center">
+                    <textarea id="secondAlice" class="second" readonly="true" disabled="true" style="resize:none"></textarea>
+                </div>
+                <div class="row text-center">
+                        <input id="AliceAddress" class="address" type="text" placeholder="Address"  required class="addressSide">
+                        <button id="AliceConfirmBtn" class="btn btn-info btn-md">
+                            <i class=" fa fa-comment"></i>confirm
+                        </button>
+                </div>
+                <textarea id="AliceText" class="text" readonly="true" style="resize:none" class="contextSide"></textarea>
+                <div class="row text-center"><input id="AliceContext" class="context" type="text" placeholder="Waiting..." required class="sendSide">
+                    <button id="AliceSendBtn" class="btn btn-info btn-md">
+                        <i class="fa fa-send"></i>send
                     </button>
                 </div>
             </div>
-            <div id="Bob" class="panel-body">
-                <textarea id="BobText" readonly="true" style="resize:none"></textarea>
-            </div>
-            <div class="panel-footer">
-                <div class="row"><input id="BobContext" type="text" placeholder="Waiting..." required>
-                    <button id="BobSendBtn" class="btn btn-info">
-                        <i class="fa fa-send"></i>
-                        send
+            <div id="page2B" class="col-md-6" hidden="true">
+                <div class="row text-center">
+                    <textarea id="firstBob" class="first text-center" readonly="true" disabled="true" style="resize:none"></textarea>
+                </div>
+                <div class="row text-center">
+                    <textarea id="secondBob" class="second" readonly="true" disabled="true" style="resize:none"></textarea>
+                </div>
+                <div class="row text-center">
+                        <input id="BobAddress" class="address" type="text" placeholder="Address" required class="addressSide">
+                        <button id="BobConfirmBtn" class="btn btn-info btn-md">
+                            <i class=" fa fa-comment"></i>confirm
+                        </button>
+                </div>
+                <textarea id="BobText" class="text" readonly="true" style="resize:none"  class="contextSide"></textarea>
+                <div class="row text-center"><input id="BobContext" class="context" type="text" placeholder="Waiting..." required class="sendSide">
+                    <button id="BobSendBtn" class="btn btn-info btn-md">
+                        <i class="fa fa-send"></i>send
                     </button>
                 </div>
             </div>
         </div>
     </div>
     </body>
-</div>
 </html>
