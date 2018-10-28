@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DownloadInformation</title>
+    <title>Chat to Chat</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="chat.css" />
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
-    <script type="text/javascript" src="showDownload.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
     <script>
-
         function startApp() {
         }
 
@@ -28,29 +27,69 @@
     </script>
     <script>
         window.onload = function () {
+            page1ToPage2();
             confirmAliceAddress(web3);
+            confirmBobAddress(web3);
         }
     </script>
 </head>
-
-
+<body id="body">
 <div class="container-fluid">
-    <body>
-        <div  id="firstAlice" align="center">Alice</div>
-        <hr>
-        <div class="row"><input id="AliceAddress" type="text" placeholder="Address"  required>
-            <button id="AliceConfirmBtn" class="btn btn-info">
-                <i class=" fa fa-comment"></i>
-                confirm
-            </button>
+    <div id="page1" class="row text-center align-middle">
+        <br><br>
+        <div id="page1A" class="col-md-12">
+            <div class="panel panel-default page1">
+                <div class="panel-body">
+                    <div id="img1">
+                        <img src="../chat_a.png" height=60% width=60%/>
+                    </div>
+                    <br><br>
+                    <div id="text1" class="text-center">
+                            <textarea class="page1Text" readonly="true" disabled="true" style="resize:none">
+                            you can build connections between two interfaces
+                            and review your sent and received messages.
+                            </textarea>
+                    </div>
+                    <br><br>
+                    <br><br>
+                    <div id="input1" class="text-center">
+                        <input id="userNameA" class="page1Input" type="text" placeholder="New Username"  style="resize:none" required>
+                    </div>
+                    <br><br>
+                    <br><br>
+                    <div id="button1">
+                        <button id="page1ButtonA" class="btn btn-primary btn-lg">CONNECT</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <textarea id="AliceText" readonly="true" style="resize:none"></textarea>
-        <div class="row"><input id="AliceContext" type="text" placeholder="Waiting..." required>
-            <button id="AliceSendBtn" class="btn btn-info">
-                <i class="fa fa-send"></i>
-                send
-            </button>
+    </div>
+    <div id="page2" class="row" hidden="true">
+        <div id="page2A" class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <textarea id="firstAlice" class="first text-center" readonly="true" disabled="true" style="resize:none"></textarea>
+                    </div>
+                    <div class="row text-center">
+                        <textarea id="secondAlice" class="second" readonly="true" disabled="true" style="resize:none"></textarea>
+                    </div>
+                    <div class="row text-center">
+                        <input id="AliceAddress" class="address" type="text" placeholder="To:"  required class="addressSide">
+                        <button id="AliceConfirmBtn" class="btn btn-primary btn-sm">
+                            <i class=" fa fa-comment"></i>confirm
+                        </button>
+                    </div>
+                    <textarea id="AliceText" class="text" readonly="true" style="resize:none" disabled="true" class="contextSide"></textarea>
+                    <div class="row text-center"><input id="AliceContext" class="context" type="text" placeholder="Waiting..." required class="sendSide">
+                        <button id="AliceSendBtn" class="btn btn-primary btn-md">
+                            <i class="fa fa-send"></i>send
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
 </div>
+</body>
 </html>

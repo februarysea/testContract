@@ -96,13 +96,13 @@ function page1ToPage2() {
             userName1 = document.getElementById("userNameA").value;
             document.getElementById("firstAlice").innerText = userName1;
             document.getElementById("secondAlice").innerText = "Your address is: 0xfBbc3725fb8Ed8c8328800BE9b7a7D4F9fD07bA4.";
-            document.getElementById("img1").hidden = true;
             document.getElementById("text1").hidden = true;
             document.getElementById("input1").hidden = true;
             document.getElementById("button1").hidden = true;
             document.getElementById("showText1").hidden = false;
             state++;
             if(state === 2) {
+                document.getElementById("img1").hidden = true;
                 document.getElementById("page1").hidden = true;
                 document.getElementById("page2").hidden = false;
                 document.getElementById("showText1").hidden = true;
@@ -118,13 +118,13 @@ function page1ToPage2() {
             userName2 = document.getElementById("userNameB").value;
             document.getElementById("firstBob").innerText = userName2;
             document.getElementById("secondBob").innerText = "Your address is: 0x454ae50829FC65D3c5e013D6C097862A84FA7546.";
-            document.getElementById("img2").hidden = true;
             document.getElementById("text2").hidden = true;
             document.getElementById("input2").hidden = true;
             document.getElementById("button2").hidden = true;
             document.getElementById("showText2").hidden = false;
             state++;
             if(state === 2) {
+                document.getElementById("img2").hidden = true;
                 document.getElementById("page1").hidden = true;
                 document.getElementById("page2").hidden = false;
                 document.getElementById("showText1").hidden = true;
