@@ -3,61 +3,55 @@
 }
 
 .context {
+    margin-top:10px;
     width:85%;
     height: 35px;
-    background-color: aliceblue;
 }
 
 
 .address {
     width:83%;
     height: 35px;
-    background-color: aliceblue;
+    border-bottom-color: cornflowerblue;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
 }
 
 .text {
+    margin-top:10px;
     width: 100%;
-    height: 450px;
-    background-color: aliceblue;
+    height: 420px;
+    border-radius:5px;
 }
 
-.addressSide {
-    border-style: solid;
-}
-
-.contextSide {
-    border-style: solid;
-}
-
-.sendSide {
-    border-style: solid;
-}
 
 .first {
-    color: cornflowerblue;
-    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 27px;
     width:95%;
-    height: 50%;
+    height: 35px;
     border-color: transparent;
-    background-color: aliceblue;
+    overflow-y:hidden;
 }
 
 .second {
     width:95%;
-    height: 100%;
+    height: 25px;
+    overflow-y:hidden;
     border-color: transparent;
-    background-color: aliceblue;
-}
-
-.confirmBtn {
-}
-
-.sendBtn {
-
+    color: lightslategray;
+    font-size: 18px;
 }
 
 .page1 {
-    height: 500px;
+    height: 600px;
+    width: 95%;
+}
+
+.page2 {
+    height: 600px;
     width: 95%;
 }
 
@@ -76,4 +70,14 @@
     border-left-color: transparent;
     border-right-color: transparent;
     border-top-color: transparent;
+}
+
+.wait {
+    width: 75%;
+    letter-spacing:3px;
+    font-size: 30px;
+    color: lightslategray;
+    border-color: transparent;
+    overflow-y:hidden;
+
 }
