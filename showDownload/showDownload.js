@@ -7,11 +7,10 @@ function page1ToPage2(web3) {
                 if (!error) {
                     if (result === "0x0") {
                         alert("Address exists!");
-                        document.getElementById("secondAlice").innerText = "Check address: " + searchAddress;
-                        document.getElementById("firstAlice").innerText = "The Download Information\n"
-                        document.getElementById("page1").hidden = true;
-                        document.getElementById("page2").hidden = false;
-                        getInputAlice();
+                        var inputAliceContext = "0x6d71d5eFa710B51198C03807D75e0A8097b21543 Hunk\n"
+                                              + "0x454ae50829FC65D3c5e013D6C097862A84FA7546 Kitty\n"
+                                              + "0x030a2d378031577De72ac1AEca5fA3bc05E7b3a2 Stan\n";
+                        document.getElementById("info").innerText = inputAliceContext;
                     }
                     else {
                         alert("No Address!");
@@ -25,8 +24,3 @@ function page1ToPage2(web3) {
     };
 }
 
-function getInputAlice() {
-    var inputAliceContext = "oefhpwporejgfiowerjig\najlfg;gns;kg\n";
-    document.getElementById("AliceText").innerText = "[Download information]:\n"+ inputAliceContext;
-    document.getElementById("AliceContext").value = "";
-}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat to Chat</title>
+    <title>Download Information</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="showDownload.css" />
@@ -11,11 +11,8 @@
     <script src="dist/web3.min.js"></script>
     <script type="text/javascript" src="showDownload.js"></script>
     <script>
-
-
-
-        function startApp(){
-            var address = "0xe3be5cfbc3d7aac197a1bd5d6c1a7e584742f6ad";
+        /*function startApp(){
+            var address = "0xd4d596310f6304d2293e177ff495440497931db5";
             var abi = [
                 {
                     "constant": true,
@@ -185,11 +182,12 @@
             var myContractInstance = web3.eth.contract(abi).at(address);
             myContractInstance.showDownloadInfo.call(function (result, error) {
                 if(!error) {
+                    alert(web3.version.api);
                     alert(result);
                 }
             });
         }
-
+        */
 
         window.addEventListener('load', function() {
             if (typeof web3 !== 'undefined') {
@@ -204,7 +202,6 @@
     </script>
     <script>
         window.onload = function () {
-            alert(web3.version.api);
             page1ToPage2(web3);
             getInputAlice();
         }
@@ -219,7 +216,7 @@
             <div class="panel panel-default page1">
                 <div class="panel-body">
                     <div id="img1">
-                        <img src="../Logo.png" height=30% width=30%/>
+                        <img src="../Logo.png" height=30% width=30%>
                     </div>
                     <br><br>
                     <div id="text1" class="text-center">
@@ -227,33 +224,17 @@
                             you can check address that someone downloads documents.
                             </textarea>
                     </div>
-                    <br><br>
                     <div id="input1" class="text-center">
                         <input id="searchAddress" class="page1Input" type="text" placeholder="Your address..."  style="resize:none" required>
                     </div>
                     <br><br>
+                    <div>
+                        <textarea id="info" class="page1Info" readonly="true" disabled="true" style="resize:none">
+                        </textarea>
+                    </div>
                     <br><br>
                     <div id="button1">
                         <button id="page1ButtonA" class="btn btn-primary btn-lg">CONNECT</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="page2" class="row" hidden="true">
-        <br><br>
-        <div id="page2A" class="col-md-12">
-            <div class="panel panel-default page2">
-                <div class="panel-body">
-                    <div class="row text-center">
-                        <textarea id="firstAlice" class="first text-center" readonly="true" disabled="true" style="resize:none">
-                        </textarea>
-                    </div>
-                    <div class="row text-center">
-                        <textarea id="secondAlice" class="second" readonly="true" disabled="true" style="resize:none"></textarea>
-                    </div>
-                    <div>
-                        <textarea id="AliceText" class="text" readonly="true" style="resize:none" disabled="true" class="contextSide"></textarea>
                     </div>
                 </div>
             </div>
