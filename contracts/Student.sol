@@ -27,7 +27,7 @@ contract Student is Administer {
     }
 
     function showDownloadInfo() public view returns (string) {
-        names = "Hunk,Stan,Bob,Jason,Frank";
+        names = "Hank,Stan,Bobby,Shelly download your notes";
         return names;
     }
 
