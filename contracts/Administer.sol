@@ -17,8 +17,8 @@ contract Administer is Ownable {
         string teacherPassword;
     }
 
-    studentAccount[]  studentAccounts;
-    teacherAccount[]  teacherAccounts;
+    studentAccount[] public studentAccounts;
+    teacherAccount[] public teacherAccounts;
 
     mapping(uint => address) idToUser;
     mapping(uint => string) idToPassword;

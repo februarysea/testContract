@@ -16,7 +16,6 @@ function getInputAlice() {
             document.getElementById("BobText").innerText = "[" + userName1 + "]:\n"+ inputAliceContext;
             document.getElementById("AliceContext").value = "";
         }
-
     }
 }
 
@@ -109,7 +108,7 @@ function page1ToPage2() {
             }
         }
         else {
-            alert("Please input user1 name!");
+            alert("Please input user name!");
         }
     };
 
@@ -131,7 +130,7 @@ function page1ToPage2() {
             }
         }
         else {
-            alert("Please input user2 name!");
+            alert("Please input user name!");
         }
     };
 }

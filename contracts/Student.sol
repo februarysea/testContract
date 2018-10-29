@@ -4,6 +4,7 @@ import "./Administer.sol";
 
 contract Student is Administer {
     uint dataFee = 0.01 ether;
+    string public names;
 
     function uploadStudentData(uint id, string data)  {
         chainData.push(data);
@@ -25,8 +26,9 @@ contract Student is Administer {
         //show to download student
     }
 
-    function showDownloadInfo(uint id) onlyAccountOf(id) {
-
+    function showDownloadInfo() public view returns (string) {
+        names = "Hunk,Stan,Bob,Jason,Frank";
+        return names;
     }
 
     function withdraw() external onlyOwner {
